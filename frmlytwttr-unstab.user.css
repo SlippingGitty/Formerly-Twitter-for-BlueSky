@@ -277,6 +277,11 @@ domain("bsky.app") {
     [role = "link"]:has( > div > div > .r-1m04atk):has([href *= "/profile/"]) div:has( > [href *= "/content/"][data-tooltip *= "mentioned"]) [dir = "auto"] {
         font-family: 'Regular Chirp' !important;
     }
+        /* Hover transitions */
+    .css-175oi2r.r-1loqt21.r-1otgn73 {
+        transition-duration: 0.2s;
+        transition-property: background-color, box-shadow;
+    }
     /* Various accent colors */
     .r-wzwllv,
     [class = "css-175oi2r r-qklmqi r-1d2f490 r-u8s1d r-zchlnj r-j76wpu"] {
@@ -304,6 +309,9 @@ domain("bsky.app") {
     }
     /* Light Theme Bullshit */
     if not lightTheme {
+            [class = "css-175oi2r r-qklmqi r-5kkj8d r-le4sbl r-1444osr"]::before {
+            color: black !important;
+    }
         /* Topbar Blur - Credit @meow_d@mas.to */
         .css-175oi2r:has([role = "tablist"]) {
             background-color: rgba(255, 255, 255, 0.85) !important;
@@ -335,6 +343,7 @@ domain("bsky.app") {
             248,
             250) !important;
         }
+        
         .r-196lrry > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) {
             background-color: rgb(230,
             236,
