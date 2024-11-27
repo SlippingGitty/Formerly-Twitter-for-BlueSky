@@ -13,6 +13,9 @@ Get it [here](https://userstyles.world/style/19107/original-formerly-twitter-x-f
 
 ## Version History:
 
+## 3.0
+- Feeds Top Bar now has a glossy blur - Credit @meow-d.github.io
+- More accurate spacing between icons and label in left side bar - Credit @meow-d.github.io
 ### 2.0
 - "Blazed Glory" toggle, which replaces Twitter branding with X
 ### v1.7:
