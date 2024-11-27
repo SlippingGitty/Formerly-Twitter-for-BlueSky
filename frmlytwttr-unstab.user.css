@@ -161,7 +161,7 @@ domain("bsky.app") {
         align-items: center;
         justify-content: center;
         background-color: var(--TwitterBlue) !important;
-        padding: 15px 0 !important;
+        padding: 15px 60px !important;
         border-radius: 999px;
         gap: 8px;
         margin-left: -9px;
@@ -231,6 +231,7 @@ domain("bsky.app") {
     /* Left Navigation Sidebar */
     nav[role = "navigation"] {
         scrollbar-color: rgb(185, 202, 211) rgb(247, 249, 249);
+        width: calc(220px + 20px);
     }
     .r-c4unlt {
         left: calc(-540px - 20px + 50vw);
@@ -248,6 +249,9 @@ domain("bsky.app") {
     }
     button[aria-label = "Compose new post"] {
         width: 90%;
+    }
+    nav.css-175oi2r {
+        background-color: transparent !important;
     }
                     /* Topbar Bottom Border */
         [class = "css-175oi2r r-opedn5 r-kzbkwu"] {
@@ -399,7 +403,7 @@ domain("bsky.app") {
                 content: 'Post' !important;
                 visibility: visible !important;
                 position: absolute !important;
-                left: 20px !important;
+                left: 15px !important;
             }
         }
 
