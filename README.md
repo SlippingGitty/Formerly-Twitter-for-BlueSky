@@ -30,6 +30,8 @@ Get it [here](https://userstyles.world/style/19107/original-formerly-twitter-x-f
 - Fonts, icons, colors, and logos have been changed
 - Feeds sidebar has a bubble (WIP)
 
+![image](https://github.com/user-attachments/assets/fd8a5ebd-b6f9-4135-a019-b3fdda733ffe)
+
 ![image](https://github.com/user-attachments/assets/65c8d0aa-d441-45eb-b45c-5469bda17bff)
 
 ![image](https://github.com/user-attachments/assets/076f2547-a159-4e0b-a1a5-bf62325de88e)
