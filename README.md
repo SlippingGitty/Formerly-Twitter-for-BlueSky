@@ -13,9 +13,9 @@ Get it [here](https://userstyles.world/style/19107/original-formerly-twitter-x-f
 
 ## Version History:
 
-### 3.1:
+## 3.1:
 - Selected Navbar items have an accent color via a toggle.
-## 3.0
+### 3.0
 - Feeds Top Bar now has a glossy blur - Credit @meow-d.github.io
 - More accurate spacing between icons and label in left side bar - Credit @meow-d.github.io
 ### 2.0
