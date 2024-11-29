@@ -9,13 +9,14 @@
 // @author      vozercozer
 // ==/UserScript==
 
-// i never make userscripts, lemme know if i did this right. idk shit about js lol. 
+// i never make userscripts, lemme know if i did this right. idk shit about js lol.
 (() => {
   'use strict';
   const favicons = {
     Twitter: 'https://files.catbox.moe/52bjpd.ico',
     'Twitter Classic': 'https://files.catbox.moe/dhlzoa.ico',
     X: 'https://files.catbox.moe/pkakac.ico',
+    'BlueSky Classic-ified': 'https://files.catbox.moe/zftpyz.ico',
   };
   const updateFavicon = (key) => {
     document.head.querySelectorAll("link[rel*='icon']").forEach(link => link.remove());
