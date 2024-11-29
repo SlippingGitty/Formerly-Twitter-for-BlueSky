@@ -10,6 +10,11 @@ Get it [here](https://userstyles.world/style/19107/original-formerly-twitter-x-f
 
 ![image](https://github.com/user-attachments/assets/e25551b0-85e7-4295-bfaa-a0e0217081c2)
 
+ ## Also see:
+ - [This Userscript](https://github.com/SlippingGitty/Formerly-Twitter-for-BlueSky/raw/refs/heads/main/TwitterIconsForBsky.user.js) lets you change the BlueSky favicon to various Twitter logos
+   
+   ![image](https://github.com/user-attachments/assets/1f38140e-793d-41c4-918c-3df17cb25e71)
+
 
 ## Version History:
 
