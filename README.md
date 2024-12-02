@@ -19,6 +19,8 @@ Get it [here](https://userstyles.world/style/19107/original-formerly-twitter-x-f
 
 ## Version History:
 
+## 3.5:
+- Accent color & Logo fixes
 ## 3.1:
 - Selected Navbar items have an accent color via a toggle.
 ### 3.0
