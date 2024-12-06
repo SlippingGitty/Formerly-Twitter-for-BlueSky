@@ -6,10 +6,11 @@ Get it [here](https://userstyles.world/style/19107/original-formerly-twitter-x-f
 - Twitter branding (and a toggle for X branding)
 - Twitter interaction Icons
 - "Tweet" button
+- "Favorites" instead of "Likes" toggle
 - Chirp Font
 - Customizable Accent Colors
 
-![image](https://github.com/user-attachments/assets/e25551b0-85e7-4295-bfaa-a0e0217081c2)
+![image](https://github.com/user-attachments/assets/f5256d9d-b3b8-41de-9eb7-80d5f64fcb58)
 
  ## Also see:
  - [This Userscript](https://github.com/SlippingGitty/Formerly-Twitter-for-BlueSky/raw/refs/heads/main/TwitterIconsForBsky.user.js) lets you change the BlueSky favicon to various Twitter logos
@@ -38,6 +39,8 @@ Get it [here](https://userstyles.world/style/19107/original-formerly-twitter-x-f
 ### v1.0: Inception:
 - Fonts, icons, colors, and logos have been changed
 - Feeds sidebar has a bubble (WIP)
+
+![image](https://github.com/user-attachments/assets/03f0b450-3724-4ad9-a41c-ddb593700985)
 
 ![image](https://github.com/user-attachments/assets/fd8a5ebd-b6f9-4135-a019-b3fdda733ffe)
 
