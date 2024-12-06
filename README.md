@@ -18,7 +18,8 @@ Get it [here](https://userstyles.world/style/19107/original-formerly-twitter-x-f
 
 
 ## Version History:
-
+## 4.0:
+- Interaction icons now use Twitter iconography, option for Favorites instead of "Likes".
 ## 3.5:
 - Accent color & Logo fixes
 ## 3.1:
