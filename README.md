@@ -2,6 +2,8 @@
 ![2](https://github.com/user-attachments/assets/4401bbc2-b051-4d30-be3d-ac7a44106ab4)
 Get it [here](https://userstyles.world/style/19107/original-formerly-twitter-x-for-bluesky)
 
+### Follow me on @vozercozer@bsky.social
+
 ## Features:
 - Twitter branding (and a toggle for X branding)
 - Twitter interaction Icons
@@ -14,11 +16,17 @@ Get it [here](https://userstyles.world/style/19107/original-formerly-twitter-x-f
 
 ## Recent Changes
 
-### 5.1
-- The right side scrolls again due to the new Trending tab being under the Feeds list 
- - the new Feeds list is *kind* of stylized. WIP.
- - you can now hide the right side Feeds list via a toggle
-- your avatar is replaced with Twitter & X logos again
+## 6.0
+- Font fixes for Firefox
+  - font is uploaded to Catbox rather than imported directly X itself
+- AMOLED mode
+  - makes the Feeds, trending, and search bar pitch black 
+- "Blazed Glory" renamed to "X Branding"
+  - search bar has a black background
+- Squircle Avatars
+- Dev & Contributor tags
+  - ~~Some of my friends might have tags too, as a treat.~~
+
 
  ## Change Favicon
  - [This Userscript](https://github.com/SlippingGitty/Formerly-Twitter-for-BlueSky/raw/refs/heads/main/TwitterIconsForBsky.user.js) lets you change the BlueSky favicon to various Twitter logos
@@ -41,6 +49,11 @@ Get it [here](https://userstyles.world/style/19107/original-formerly-twitter-x-f
 
 ## Version History:
 
+# 5.1
+- The right side scrolls again due to the new Trending tab being under the Feeds list 
+ - the new Feeds list is *kind* of stylized. WIP.
+ - you can now hide the right side Feeds list via a toggle
+- your avatar is replaced with Twitter & X logos again
 ## 5.0.1
 - Various fixes to left sidebar that fix it being scrollable. Restored the Tweet/Post button look from 4.2 
  - the shadow on the Tweet/Post button is back 
