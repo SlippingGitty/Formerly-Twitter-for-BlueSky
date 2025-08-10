@@ -58,7 +58,7 @@ d88P"                        888               888                  888    888
       }
 
       button.css-g5y9jx:nth-child(6)>div:nth-child(1)::after {
-         content: '  Formerly Twitter (August 8th, 2025) ';
+         content: '  Formerly Twitter (August 10th, 2025) ';
          font-size: small;
       }
 
@@ -496,6 +496,18 @@ d88P"                        888               888                  888    888
             margin-right: 40px;
          }
 
+         a[href="/profile/conqara.bsky.social"]::after {
+            content: " 🍌 ";
+            /* Dev badge */
+            color: white;
+            font-weight: bold;
+            font-size: .9em;
+            background: accentColor;
+            padding: 5px;
+            border-radius: 15px;
+            margin: 5px;
+         }
+
          /* hide the badge when it's NOT the @handle */
          a[href="/profile/vozercozer.bsky.social"]:not(:first-child)::after,
          a[href="/profile/vozercozer.bsky.social"][aria-label*="avatar"]::after,
@@ -504,7 +516,9 @@ d88P"                        888               888                  888    888
          a[href="/profile/isabelroses.com"]:not(:first-child)::after,
          a[href="/profile/isabelroses.com"][aria-label*="avatar"]::after,
          a[href="/profile/xan.lol"]:not(:first-child)::after,
-         a[href="/profile/xan.lol"][aria-label*="avatar"]::after {
+         a[href="/profile/xan.lol"][aria-label*="avatar"]::after,
+         a[href="/profile/conqara.bsky.social"]:not(:first-child)::after,
+         a[href="/profile/conqara.bsky.social"][aria-label*="avatar"]::after {
             content: none;
          }
       }
@@ -553,6 +567,12 @@ d88P"                        888               888                  888    888
          background-color: accentColor !important;
          border: accentColor !important;
          color: accentColor !important;
+      }
+
+      [aria-label^="1 unread item"],
+      [aria-label$="unread items"],
+      [aria-label$="unread item"] {
+         background-color: accentColor !important;
       }
 
       .r-1xfd6ze>div:nth-child(1)>div:nth-child(1)>div:nth-child(4)>div:nth-child(1)>button:nth-child(2)>svg:nth-child(1)>path:nth-child(1) {
@@ -745,7 +765,8 @@ d88P"                        888               888                  888    888
 
       /* Force White Twitter Logo in Dark Mode */
       if forceWhite {
-         html.theme--dark #radix-\:re\:>div:nth-child(1), html.theme--dim #radix-\:re\:>div:nth-child(1) {
+         html.theme--dark #radix-\:re\:>div:nth-child(1),
+         html.theme--dim #radix-\:re\:>div:nth-child(1) {
             background-color: rgb(217, 217, 217) !important;
          }
       }
@@ -888,9 +909,9 @@ d88P"                        888               888                  888    888
          html.theme--dark .r-c4unlt>div:nth-child(10)>button:nth-child(1)>div:nth-child(2),
          html.theme--dark .r-c4unlt>div:nth-child(11)>button:nth-child(1)>div:nth-child(2),
          html.theme--dark nav.css-g5y9jx>div:nth-child(10)>button:nth-child(1)>div:nth-child(2),
-          html.theme--dim .r-c4unlt>div:nth-child(10)>button:nth-child(1)>div:nth-child(2),
+         html.theme--dim .r-c4unlt>div:nth-child(10)>button:nth-child(1)>div:nth-child(2),
          html.theme--dim .r-c4unlt>div:nth-child(11)>button:nth-child(1)>div:nth-child(2),
-         html.theme--dim nav.css-g5y9jx>div:nth-child(10)>button:nth-child(1)>div:nth-child(2){
+         html.theme--dim nav.css-g5y9jx>div:nth-child(10)>button:nth-child(1)>div:nth-child(2) {
             color: black !important;
          }
 
@@ -908,7 +929,7 @@ d88P"                        888               888                  888    888
          }
 
          button.css-g5y9jx:nth-child(6)>div:nth-child(1)::after {
-            content: ' 𝕏 Formerly Twitter (August 8th, 2025) ';
+            content: ' 𝕏 Formerly Twitter (August 10th, 2025) ';
             font-size: small;
          }
 
