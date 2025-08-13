@@ -14,6 +14,7 @@
   "X": "muskyMode"
 }
 @var          checkbox forceWhite    "Force White Logo in Dark Theme"  0
+@var          checkbox    bskylogo "Bsky Logo"    0
 @var select themeMode "Theme Mode" {
   "Dark/Light": "null",
   "AMOLED": "AMOLED"
@@ -58,7 +59,7 @@ d88P"                        888               888                  888    888
       }
 
       button.css-g5y9jx:nth-child(6)>div:nth-child(1)::after {
-         content: '  Formerly Twitter (August 10th, 2025) ';
+         content: '  Formerly Twitter (August 13th, 2025) ';
          font-size: small;
       }
 
@@ -508,6 +509,18 @@ d88P"                        888               888                  888    888
             margin: 5px;
          }
 
+         a[href="/profile/kib48.bsky.social"]::after {
+            content: "🐧";
+            /* Dev badge */
+            color: white;
+            font-weight: bold;
+            font-size: .9em;
+            background: accentColor;
+            padding: 5px;
+            border-radius: 15px;
+            margin: 5px;
+         }
+
          /* hide the badge when it's NOT the @handle */
          a[href="/profile/vozercozer.bsky.social"]:not(:first-child)::after,
          a[href="/profile/vozercozer.bsky.social"][aria-label*="avatar"]::after,
@@ -518,7 +531,9 @@ d88P"                        888               888                  888    888
          a[href="/profile/xan.lol"]:not(:first-child)::after,
          a[href="/profile/xan.lol"][aria-label*="avatar"]::after,
          a[href="/profile/conqara.bsky.social"]:not(:first-child)::after,
-         a[href="/profile/conqara.bsky.social"][aria-label*="avatar"]::after {
+         a[href="/profile/conqara.bsky.social"][aria-label*="avatar"]::after,
+         a[href="/profile/kib48.bsky.social"]:not(:first-child)::after,
+         a[href="/profile/kib48.bsky.social"][aria-label*="avatar"]::after {
             content: none;
          }
       }
@@ -929,7 +944,7 @@ d88P"                        888               888                  888    888
          }
 
          button.css-g5y9jx:nth-child(6)>div:nth-child(1)::after {
-            content: ' 𝕏 Formerly Twitter (August 10th, 2025) ';
+            content: ' 𝕏 Formerly Twitter (August 13th, 2025) ';
             font-size: small;
          }
 
@@ -1093,6 +1108,16 @@ d88P"                        888               888                  888    888
 
       html.theme--light .r-1ki14p2 {
          bottom: 15px;
+      }
+
+      /* BlueSky logo */
+      if bskylogo {
+         #radix-\:re\:>div:nth-child(1) {
+            margin-left: -15px !important;
+            height: 2em !important;
+            mask-image: url(https://files.catbox.moe/t2t6ps.svg) !important;
+            width: 39px !important;
+         }
       }
 
       /* Dim Mode Bullshit */
