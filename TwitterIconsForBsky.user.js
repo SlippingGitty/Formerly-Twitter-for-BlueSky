@@ -2,6 +2,7 @@
 // @name        Twitter icons for Bsky
 // @description Assortment of Twitter favicons for BlueSky
 // @match       https://bsky.app/*
+// @match       https://main.bsky.dev/*
 // @grant       GM_registerMenuCommand
 // @grant       GM_setValue
 // @grant       GM_getValue
