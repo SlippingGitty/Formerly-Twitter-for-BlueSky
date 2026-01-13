@@ -1,6 +1,6 @@
-# ![8](https://files.catbox.moe/zftpyz.ico) Formerly Twitter for BlueSky 
+# ![8](https://files.catbox.moe/zftpyz.ico) Formerly Twitter for BlueSky | Dev
 ![2](https://github.com/user-attachments/assets/4401bbc2-b051-4d30-be3d-ac7a44106ab4)
-Get it [here](https://userstyles.world/style/19107/original-formerly-twitter-x-for-bluesky)
+Get Stable [on Userstyles.world](https://userstyles.world/style/19107/original-formerly-twitter-x-for-bluesky)
 
 ### Follow me on @vozercozer@bsky.social
 
@@ -16,7 +16,12 @@ Get it [here](https://userstyles.world/style/19107/original-formerly-twitter-x-f
 
 ## Recent Changes
 
-## 6.0
+## 7.0 
+- Fixes for the new Bsky update
+  - New Feeds & Trending coverage
+  - Font fixes in general
+
+### 6.0
 - Font fixes for Firefox
   - font is uploaded to Catbox rather than imported directly X itself
 - AMOLED mode
