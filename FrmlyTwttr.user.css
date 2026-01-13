@@ -3,7 +3,7 @@
    domain("deer.social") {
       /* ==UserStyle==
 @name         Formerly Twitter & X for BlueSky
-@version      20241105.22.04.6.2
+@version      70000000.0.0
 @namespace    https://userstyles.world/user/slippinggitty
 @description  BlueSky, with a Tweest!
 @author       slippinggitty
@@ -105,17 +105,24 @@ position: absolute;
  content: "What's happening";
 } */
       /* Userstyle Branding */
-      div.css-146c3p1:nth-child(6)>a:nth-child(4)::after,
-      div.css-146c3p1:nth-child(4)>a:nth-child(4)::after {
-         content: ' • \ v6'
+ #root > div > div > div > div > div > div > div.css-146c3p1::after {
+         content: ' • \ v7';
+         font-family: 'Regular Chirp', sans-serif !important;
       }
+      
+       #root > div > div > div > div > div > div > div.css-146c3p1 {
+          background-color: none;
+          border: none !important;
+       }
 
       button.css-g5y9jx:nth-child(6)>div:nth-child(1)::after {
-         content: '  Formerly Twitter (September 18th, 2025) ';
+         content: '  Formerly Twitter (January 8th, 2026) ';
          font-size: small;
+         font-family: 'Regular Chirp', sans-serif !important;
       }
 
       a.css-g5y9jx:nth-child(13)>div:nth-child(1)>div:nth-child(2)::after {
+         font-family: 'Regular Chirp', sans-serif !important;
          content: ' '
       }
 
@@ -278,36 +285,57 @@ position: absolute;
    domain("bsky.app") {
       /* Actual Adjustments needed */
       /* Following Feeds List */
-      #root>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(3)>div:nth-child(2),
-      #root>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(3)>div:nth-child(4) {
-         background-color: rgb(21, 25, 28) !important;
-         border: solid 1px #fff0 !important;
-         border-radius: 15px !important;
-         padding: 20px !important;
-         margin: 5px 0 !important;
-         overflow-y: hidden !important;
-         overflow-x: hidden !important;
-      }
+#root>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(3)>div:nth-child(2) {
+    background-color: rgb(21, 25, 28) !important;
+    border: solid 1px #fff0 !important;
+    border-radius: 15px !important;
+    padding: 20px !important;
+    margin: 5px 0 !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    scrollbar-width: none;
+}
+
+#root>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(3)>div:nth-child(2):hover,
+#root>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(3)>div:nth-child(4):hover {
+    scrollbar-width: thin;
+}
+
+#root>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(3)>div:nth-child(2)::-webkit-scrollbar,
+#root>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(3)>div:nth-child(4)::-webkit-scrollbar {
+    width: 0;
+}
+
+#root>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(3)>div:nth-child(2):hover::-webkit-scrollbar,
+#root>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(3)>div:nth-child(4):hover::-webkit-scrollbar {
+    width: 6px;
+}
+
+#root>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(3)>div:nth-child(2)::-webkit-scrollbar-thumb,
+#root>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(3)>div:nth-child(4)::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+      
+      
 
       /* Trending */
-      #root>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(3)>div:nth-child(4)>div:nth-child(1)>div:nth-child(2) {
+      #root>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(3)>div:nth-child(4)>div:nth-child(1)>div:nth-child(2), #root > div > div > div > div > div > div > div:nth-child(3) > div:nth-child(1) > div {
          color: white !important;
          font-size: 20px !important;
          margin-bottom: 4px;
       }
 
-      #root>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(3)>div:nth-child(4)>div:nth-child(1)>svg:nth-child(1) {
+      #root>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(3)>div:nth-child(4)>div:nth-child(1)>svg:nth-child(1), #root > div > div > div > div > div > div > div:nth-child(3) > div:nth-child(1) > svg {
          display: none;
       }
-
-      /* Hide line break */
-      .r-kemksi>div:nth-child(3)>div:nth-child(5),
-      .r-14lw9ot>div:nth-child(3)>div:nth-child(3),
-      .r-14lw9ot>div:nth-child(3)>div:nth-child(5),
-      #root>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(3)>div:nth-child(3),
-      #root>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(3)>div:nth-child(5) {
-         display: none;
+      
+      #root > div > div > div > div > div > div > div:nth-child(3) {
+         background-color: #15191c;
+         border: none;
       }
+      
 
       div.css-146c3p1:nth-child(6) {
          margin-left: 10px;
@@ -390,10 +418,12 @@ position: absolute;
       .r-kemksi>div:nth-child(3)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(3) {
          border-radius: 25px !important;
       }
+      
+      
 
       /* Avatar/Logo replacement -  Credit: Fix from @DavidBuchanan314 */
-      #radix-\:re\:>div:nth-child(1),
-      #radix-\:re\:>div:nth-child(1) {
+      #radix-«rf» > div:nth-child(1),
+      #radix-«rf» > div:nth-child(1), #radix-«rf» > div:nth-child(1), #radix-«rf» > div:nth-child(1) {
          width: 29px !important;
          height: 2em;
          background-color: var(--TwitterLogo) !important;
@@ -402,33 +432,33 @@ position: absolute;
       }
 
       nav.css-g5y9jx>div:nth-child(1),
-      #radix-\:re\:>div:nth-child(1) {
+      #radix-«rf» > div:nth-child(1), #radix-«rf» > div:nth-child(1) {
          margin-bottom: 0px !important;
       }
 
       nav.css-g5y9jx>div:nth-child(1),
-      #radix-\:re\:>div:nth-child(1) {
+      #radix-«rf» > div:nth-child(1), #radix-«rf» > div:nth-child(1) {
          margin-bottom: 10px !important;
       }
 
-      #radix-\:re\:>div:nth-child(1)>div:nth-child(1)>div:nth-child(2),
-      #radix-\:re\:>div:nth-child(1),
-      #radix-\:re\:>div:nth-child(1)>div:nth-child(1)>div:nth-child(2),
-      #radix-\:re\:>div:nth-child(1) {
+      #radix-«rf» > div:nth-child(1)>div:nth-child(1)>div:nth-child(2),
+      #radix-«rf» > div:nth-child(1),
+      #radix-«rf» > div:nth-child(1)>div:nth-child(1)>div:nth-child(2),
+      #radix-«rf» > div:nth-child(1), #radix-«rf» > div:nth-child(1) {
          border: none !important;
       }
 
-      #radix-\:re\:>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1),
-      radix-\:re\:>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) {
+      #radix-«rf» > div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1),
+      radix-\:re\:>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1), #radix-«rf» > div:nth-child(1) {
          display: none;
       }
 
-      #radix-\:re\:>div:nth-child(1)>div:nth-child(1)>div:nth-child(1),
-      #radix-\:re\:>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) {
+      #radix-«rf» > div:nth-child(1)>div:nth-child(1)>div:nth-child(1),
+      #radix-«rf» > div:nth-child(1)>div:nth-child(1)>div:nth-child(1) {
          background-color: transparent !important;
       }
 
-      [class="css-g5y9jx r-pgf20v r-1rnoaur r-1xcajam r-1awozwy r-13l2t4g r-1pi2tsx r-1d2f490 r-gy4na3 r-9aemit r-12ijkx4 r-ipm5af r-br5s0h r-z2g584"] {
+      [class="css-g5y9jx r-1niwhzg r-vvn4in r-u6sd8q r-1p0dtai r-1pi2tsx r-1d2f490 r-u8s1d r-zchlnj r-ipm5af r-13qz1uu r-1wyyakw r-4gszlv"], #radix-«rf» > div:nth-child(1) > div > div.css-g5y9jx.r-1mlwlqe.r-1udh08x.r-417010, #radix-«rf» > div:nth-child(1) > div > div:nth-child(2) {
          border-color: rgba(37, 51, 66, 0) !important;
       }
 
@@ -440,8 +470,8 @@ position: absolute;
          border: none;
       }
 
-      .r-f727ji [class="css-g5y9jx r-1mlwlqe r-1udh08x r-417010"],
-      #radix-\:re\:>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) {
+
+#radix-«rf» > div:nth-child(1) > div > div.css-g5y9jx.r-1mlwlqe.r-1udh08x.r-417010, #radix-«rf» > div:nth-child(1) > div > div.css-g5y9jx.r-1mlwlqe.r-1udh08x.r-417010 {
          display: none;
       }
 
@@ -452,7 +482,7 @@ position: absolute;
       /* Left Navigation Sidebar */
       nav[role="navigation"] {
          scrollbar-color: rgb(185, 202, 211) rgb(247, 249, 249);
-         width: calc(220px + 20px);
+    /*     width: calc(220px + 20px); */
       }
 
       .r-c4unlt {
@@ -563,11 +593,10 @@ position: absolute;
             border-radius: 15px;
             margin: 5px;
          }
-
-         /* Others */
+/*
+     
          a[href="/profile/dddaswe.bsky.social"]::after {
             content: " F Contrib";
-            /* Dev badge */
             color: white;
             font-weight: bold;
             font-size: .9em;
@@ -642,9 +671,9 @@ position: absolute;
             padding: 5px;
             border-radius: 15px;
             margin: 5px;
-         }
+         }*/
 
-         /* hide the badge when it's NOT the @handle */
+
          a[href="/profile/vozercozer.bsky.social"]:not(:first-child)::after,
          a[href="/profile/vozercozer.bsky.social"][aria-label*="avatar"]::after,
          a[href="/profile/dddaswe.bsky.social"]:not(:first-child)::after,
@@ -662,7 +691,7 @@ position: absolute;
          a[href="/profile/albumminus.band"]:not(:first-child)::after,
          a[href="/profile/albumminus.band"][aria-label*="avatar"]::after {
             content: none;
-         }
+         } 
       }
    }
 
@@ -695,7 +724,7 @@ position: absolute;
          }
 
          [role="link"]:has(>div>div>.r-1m04atk):has([href*="/profile/"]) div:has(>[href*="/content/"][data-tooltip*="mentioned"]) [data-no-underline="1"],
-         [role="link"]:has(>div>div>.r-1m04atk):has([href*="/profile/"]) div:has(>[href*="/content/"][data-tooltip*="mentioned"]) [dir="auto"] {
+         [role="link"]:has(>div>div>.r-1m04atk):has([href*="/profile/"]) div:has(>[href*="/content/"][data-tooltip*="mentioned"]) [dir="auto"], [class="css-1jxf684 r-1loqt21"] {
             font-family: 'Regular Chirp' !important;
          }
       }
@@ -904,8 +933,8 @@ position: absolute;
    }
 
    @-moz-document url("https://bsky.app/"),
-   url("https://dev.bsky.app/") {
-      .r-2llsf>div:nth-child(1)>div:nth-child(1) {
+   url("https://main.bsky.dev/") {
+      .r-2llsf>div:nth-child(1)>div:nth-child(1), #root > div > div > div > div > div > main > div.css-g5y9jx.r-13awgt0 > div > div > div > div:nth-child(2) > div > div:nth-child(1) {
          display: none
       }
    }
@@ -938,8 +967,8 @@ position: absolute;
 
       /* Force White Twitter Logo in Dark Mode */
       if forceWhite {
-         html.theme--dark #radix-\:re\:>div:nth-child(1),
-         html.theme--dim #radix-\:re\:>div:nth-child(1) {
+         html.theme--dark #radix-«rf» > div:nth-child(1),
+         html.theme--dim #radix-«rf» > div:nth-child(1) {
             background-color: rgb(217, 217, 217) !important;
          }
       }
@@ -1081,9 +1110,8 @@ position: absolute;
 
       /* AMOLED */
       if themeMode=="AMOLED" {
-         #root>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(3)>div:nth-child(4),
          #root>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(3)>div:nth-child(2),
-         .r-kemksi>div:nth-child(3)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(3) {
+         .r-kemksi>div:nth-child(3)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(3), html.theme--dark #root > div > div > div > div > div > div > div:nth-child(3) {
             background-color: rgba(0, 0, 0, 0) !important;
             border: 1px solid #333 !important;
          }
@@ -1146,17 +1174,26 @@ position: absolute;
 
          /* Userstyle Branding */
          div.css-146c3p1:nth-child(6)>a:nth-child(4)::after,
-         div.css-146c3p1:nth-child(4)>a:nth-child(4)::after {
-            content: ' • \𝕏 v6';
+         div.css-146c3p1:nth-child(4)>a:nth-child(4)::after,
+  #root > div > div > div > div > div > div > div.css-146c3p1::after{
+            content: ' • \𝕏 v7';
          }
 
-         button.css-g5y9jx:nth-child(6)>div:nth-child(1)::after {
-            content: ' 𝕏 Formerly Twitter (September 18th, 2025) ';
-            font-size: small;
-         }
+      button.css-g5y9jx:nth-child(6)>div:nth-child(1)::after {
+         content: ' 𝕏 Formerly Twitter (January 8th, 2026) ';
+         font-size: small;
+         font-family: 'Regular Chirp', sans-serif !important;
+      }
 
-         a.css-g5y9jx:nth-child(13)>div:nth-child(1)>div:nth-child(2)::after {
-            content: ' 𝕏'
+      a.css-g5y9jx:nth-child(13)>div:nth-child(1)>div:nth-child(2)::after {
+         font-family: 'Regular Chirp', sans-serif !important;
+         content: ' 𝕏'
+      }
+
+         #root>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(3)>div:nth-child(2),
+         .r-kemksi>div:nth-child(3)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(3), html.theme--dark #root > div > div > div > div > div > div > div:nth-child(3) {
+            background-color: rgba(0, 0, 0, 0) !important;
+            border: 1px solid #333 !important;
          }
 
          /* Search */
@@ -1320,7 +1357,7 @@ position: absolute;
             background-color: white !important;
          }
 
-         #radix-\:re\:>div:nth-child(1) {
+         #radix-«rf» > div:nth-child(1) {
             margin-left: -15px !important;
             height: 2em;
             mask-image: url(https://files.catbox.moe/zn96qo.svg) !important;
@@ -1328,8 +1365,12 @@ position: absolute;
             background-color: white !important;
          }
 
-         html.theme--light #radix-\:re\:>div:nth-child(1) {
+         html.theme--light #radix-«rf» > div:nth-child(1) {
             background-color: rgb(0, 0, 0) !important;
+         }
+         
+          html.theme--light #root > div > div > div > div > div > div > div:nth-child(3) {
+             background-color: rgb(255, 255, 255) !important;
          }
 
          nav.css-g5y9jx>div:nth-child(11)>button:nth-child(1)>div:nth-child(1) {
@@ -1349,17 +1390,21 @@ position: absolute;
             color: white;
          }
 
-         #root>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(3)>div:nth-child(2),
-         #root>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(3)>div:nth-child(4) {
-            background-color: rgb(0, 0, 0) !important;
-            border: solid 1px rgb(37, 51, 66) !important;
-            border-radius: 15px !important;
-            padding: 20px !important;
-            margin: 1px 0 !important;
-         }
+
       }
 
       /* Light Theme Bullshit */
+
+        html.theme--light #root>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(3)>div:nth-child(4)>div:nth-child(1)>div:nth-child(2), html.theme--light #root > div > div > div > div > div > div > div:nth-child(3) > div:nth-child(1) > div {
+         color: #000 !important;
+         font-size: 20px !important;
+         margin-bottom: 4px;
+      }
+       html.theme--light #root > div > div > div > div > div > div > div:nth-child(3) {
+         background-color: #f4f8fb !important;
+         border: none;
+      }
+      
       html.theme--light [class="css-g5y9jx r-qklmqi r-5kkj8d r-le4sbl r-1444osr"]::before,
       html.theme--light #root>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(3)>div:nth-child(4)>div:nth-child(1)>div:nth-child(2) {
          color: black !important;
@@ -1388,9 +1433,7 @@ position: absolute;
          color: #000;
       }
 
-      html.theme--light #root>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(3)>div:nth-child(4) {
-         background-color: #f5f9fa !important;
-      }
+
 
       html.theme--light [class="css-g5y9jx r-196lrry r-pm9dpa r-1rnoaur r-1xcajam r-1ipicw7"],
       html.theme--light #root>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(3)>div:nth-child(2),
@@ -1467,7 +1510,7 @@ position: absolute;
 
       /* BlueSky logo */
       if bskylogo {
-         #radix-\:re\:>div:nth-child(1) {
+         #radix-«rf» > div:nth-child(1) {
             margin-left: -15px !important;
             height: 2em !important;
             mask-image: url(https://files.catbox.moe/t2t6ps.svg) !important;
@@ -1585,7 +1628,7 @@ position: absolute;
       }
 
       if brandingMode=="vanilla" {
-         #radix-\:re\:>div:nth-child(1) {
+         #radix-«rf» > div:nth-child(1) {
             margin-left: -15px !important;
             height: 2em !important;
             mask-image: url(https://files.catbox.moe/t2t6ps.svg) !important;
@@ -1661,8 +1704,12 @@ position: absolute;
 
       /* Dim Mode Bullshit */
       html.theme--dim [class="css-g5y9jx r-qklmqi r-5kkj8d r-le4sbl r-1444osr"],
-      html.theme--dim #root>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(3)>div:nth-child(2) {
+      html.theme--dim #root>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(3)>div:nth-child(2), html.theme--dim #root > div > div > div > div > div > div > div:nth-child(3) {
          background-color: rgb(25, 39, 52) !important;
+      }
+      
+      html.theme--dim#root > div > div > div > div > div > div > div.css-146c3p1 {
+          background-color: rgba(25, 39, 52, 0) !important;
       }
 
       html.theme--dim .css-g5y9jx:has([role="tablist"]) {
@@ -1674,12 +1721,4 @@ position: absolute;
          backdrop-filter: blur(12px);
       }
 
-      html.theme--dim #root>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(3)>div:nth-child(4) {
-         background-color: rgb(25, 39, 52) !important;
-         border: 1px solid rgba(255, 255, 255, 0) !important;
-         border-radius: 15px !important;
-         padding: 20px !important;
-         margin: 5px 0px !important;
-         overflow: hidden !important;
-      }
    }
